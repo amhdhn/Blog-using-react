@@ -1,0 +1,21 @@
+* {
+    text-decoration: none;
+}
+
+@keyframes loadingAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

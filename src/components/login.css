@@ -1,0 +1,115 @@
+.loginDivContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 469px;
+}
+
+.loginImg {
+    display: none;
+}
+
+.loginDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginHeader {
+    font: 1.5em 'raleway';
+    font-weight: 800;
+    color: #698fc2;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inpputDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+}
+
+.emailDiv label,
+.passDiv label {
+    font: .86em var(--poppinsFont);
+    color: #333;
+}
+
+.emailDiv input,
+.passDiv input {
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 0 15px 0 40px;
+    margin-top: 5px;
+    background-color: rgba(136, 136, 136, .1);
+    color: #555;
+    font: .85em var(--poppinsFont);
+}
+
+.emailDiv input::placeholder,
+.passDiv input::placeholder {
+    color: #aaa;
+}
+
+.emailDiv::after {
+    content: '\e0be';
+    color: #698fc2;
+    font: 1.4em 'material icons';
+    position: absolute;
+    margin: 33px 0 0 9px;
+}
+
+.passDiv::after {
+    content: '\e897';
+    color: #698fc2;
+    font: 1.4em 'material icons';
+    position: absolute;
+    margin: 33px 0 0 9px;
+}
+
+.loginForm button {
+    margin-top: 25px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #6da1e6;
+    color: #fff;
+    font: .85em var(--poppinsFont);
+    cursor: pointer;
+    transition: background-color .6s;
+}
+
+.loginForm button:hover {
+    background-color: #6291cf;
+}
+
+.alertText {
+    color: tomato;
+    font: .85em var(--poppinsFont);
+    margin-top: 10px;
+    animation: fadein .6s;
+    display: none;
+}
+
+.signupInfo {
+    color: #555;
+    font: .85em var(--poppinsFont);
+    margin: 28px 0 0 25px;
+    position: relative;
+}
+
+.signupInfo::before {
+    content: '\e887';
+    font: 1.4em 'material icons';
+    position: absolute;
+    margin-left: -25px;
+    color: #698fc2;
+}

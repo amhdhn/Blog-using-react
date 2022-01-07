@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7ebf1;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user {
+    font: 1.4em 'material icons';
+    color: #1b2330;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.userNight {
+    color: #aaa;
+}
+
+.headerNight {
+    background-color: #1b2330;
+}
+
+.logo {
+    color: #1b2330;
+    font: 1.2em 'Raleway';
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.logoNight {
+    color: #ccc;
+}
+
+
+/* nightButton */
+
+.nightButtonContainer {
+    width: 28px;
+    height: 28px;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+}
+
+.nightButtonContainer p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: transform .6s;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.front {
+    color: #1b2330;
+    padding: .8px 0 0;
+    font: 1.3em 'material icons';
+}
+
+.back {
+    color: #aaa;
+    transform: rotateY(180deg);
+    font: 1.3em 'material icons';
+}
+
+.nightButtonContainerNight .front {
+    transform: rotateY(180deg);
+}
+
+.nightButtonContainerNight .back {
+    transform: rotateY(0);
+}

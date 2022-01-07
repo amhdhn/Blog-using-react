@@ -1,0 +1,221 @@
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid rgba(85, 85, 85, .4);
+}
+
+.postTitle {
+    font: 1.1em 'Raleway';
+    font-weight: 700;
+    color: #444;
+    margin-top: 25px;
+}
+
+.postTitle::before {
+    content: '\e244';
+    font: 1.4em 'material icons';
+}
+
+.postTitleNight {
+    color: #bbb;
+}
+
+.postContent {
+    font: .95em var(--poppinsFont);
+    color: #777;
+    margin-top: 10px;
+}
+
+.postHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+.postAuthorImg {
+    width: 36px;
+    height: 36px;
+    background-color: tomato;
+    border-radius: 50%;
+    font: 1.5em var(--poppinsFont);
+    text-align: center;
+    color: #fff;
+}
+
+.postAuthorDetail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #888;
+    justify-content: center;
+}
+
+.postAuther {
+    font: .84em var(--poppinsFont);
+    color: #222;
+}
+
+.postAutherNight {
+    color: #ccc;
+}
+
+.postDate {
+    font: .65em var(--poppinsFont);
+    color: #666;
+}
+
+.postDateNight {
+    color: #aaa;
+}
+
+.postSeeMore {
+    font: .84em var(--poppinsFont);
+    color: #222;
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 30px;
+    color: rgb(2, 93, 212);
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    align-self: flex-end;
+}
+
+.postSeeMore::after {
+    content: '\e409';
+    font: 1.5em 'material icons';
+    position: absolute;
+    transition: transform .6s;
+    margin-top: -1px;
+}
+
+.postSeeMore:hover:after {
+    transform: translateX(5px);
+}
+
+.postSeeMoreNight {
+    color: rgb(216, 159, 168);
+}
+
+
+/* homeLoadingSection */
+
+.homeLoadingSection,
+.homeLoadingSectionNight {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid rgba(190, 190, 190, .6);
+    overflow: hidden;
+    position: relative;
+}
+
+.homeHeaderLoadingSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.homeHeaderLoadingImg {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(190, 190, 190, .6);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.homeHeaderLoadingAuthorName {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    border-left: 2px solid rgba(190, 190, 190, .6);
+    padding-left: 15px;
+}
+
+.hoemHeaderAuthorNameDate {
+    width: 100px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: rgba(190, 190, 190, .6);
+    position: relative;
+    overflow: hidden;
+}
+
+.hoemHeaderAuthorNameOf {
+    width: 100px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: rgba(190, 190, 190, .6);
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.homeLoadingPostHeader {
+    width: 250px;
+    height: 18px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(190, 190, 190, .6);
+    border-radius: 3px;
+    margin: 25px 0 10px 25px;
+}
+
+.homeLoadingSection::before {
+    content: '\e244';
+    font: 1.4em 'material icons';
+    color: rgba(190, 190, 190, .6);
+    position: absolute;
+    margin: 82px 0 0 -3px;
+}
+
+.homeLoadingPostBody {
+    width: 100%;
+    height: 18px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(190, 190, 190, .6);
+    border-radius: 3px;
+    margin-top: 8px;
+}
+
+.homeLoadingPostSee {
+    width: 120px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(190, 190, 190, .6);
+    border-radius: 3px;
+    margin-top: 15px;
+    align-self: flex-end;
+}
+
+.homeLoadingSection::after {
+    width: 150px;
+    height: calc(100% - 40px);
+    top: 20px;
+    background-color: #456ca0;
+    content: '';
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to right, transparent, rgba(231, 235, 241, .4), transparent);
+    animation: loadingAnimation .8s linear infinite;
+}
+
+.homeLoadingSectionNight::after {
+    width: 150px;
+    height: calc(100% - 40px);
+    top: 20px;
+    background-color: #456ca0;
+    content: '';
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to right, transparent, rgba(27, 35, 48, .4), transparent);
+    animation: loadingAnimation .8s linear infinite;
+}
