@@ -6,7 +6,7 @@ Blog Feature :
 3- Login page for admins
 4- Manage admin posts by itself (add new blog , delete blog ,change Password )
 you can login to admin account using 
-email pedram@gmail.com
+email pedram at gmail.com
 password : 987654321
 
 #Run info  
