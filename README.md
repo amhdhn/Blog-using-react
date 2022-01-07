@@ -1,6 +1,6 @@
 # Blog using react and json-server
 Blog Feature :
-1- List of blogs 
+1- List of blogs \n
 2- Show blog detalis
 2- Night Mode
 3- Login page for admins
